@@ -1,7 +1,7 @@
 exports.euphemize = function euphemize(str) {
    var p =
    {
-        " cunt| pussy| twat": " hoo-hah",
+        " cunt| pussy| twat| vagina": " hoo-hah",
         " shit| crap| poop| turd": " smelly nugget",
         " cocksucker| motherfucker| fucker| faggot| fag| nigger| nigga": " curmudgeon",
         " cum| jizz": " goof juice",
@@ -12,12 +12,14 @@ exports.euphemize = function euphemize(str) {
         "goddamn|god damn|damn": "dagnabbit",
         " bitches": " lovely ladies",
         " bitch": " nag",
-        " asshole| anal cavity| anus": " dirt box",
+        " asshole| anal cavity| anus": " angry dirt box",
         "cunnilingus": "drinking from the furry cup",
         "anal sex": "spear fishing for doodoo sharks",
         " clitoris | clit ": " love button ",
         " ejaculate | spooge ": " boom boom ",
-        " masturbation | wanking | jerking ": " shaking the mayonnaise bottle "
+        " ejaculation": " euphoric shotgun to go boo-yah",
+        " masturbation | wanking | jerking ": " shaking the mayonnaise bottle ",
+        "\r|\n": " "
    };
 
    
