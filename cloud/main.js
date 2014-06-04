@@ -8,9 +8,10 @@ Parse.Cloud.define("random", function(request, response) {
         method:'GET',
         url:'http://api.urbandictionary.com/v0/random',
 	success: function(httpResponse){
+            var word = httpResponse.data.list[0].word;
             var str = httpResponse.data.list[0].definition;
             var suburb = require('cloud/suburb.js');
-            response.success(suburb.euphemize(str));	    
+            response.success(suburb.euphemize(word + ': ' + str));	    
 	},
 	error: function(httpResponse){
 	    response.error(error);
